@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This React App is a Assignment for Fullstack Web Developer Program (REACT & NODE) at Business College Helsinki.
 
 ## Available Scripts
 
