@@ -1,0 +1,68 @@
+.app-wrapper {
+  max-width: 400px;
+  max-height: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  text-align: center;
+  background: teal;
+  color: #fff;
+  padding: 1.5rem 0;
+}
+
+.inputs {
+  padding: 0 0 50px 0;
+  height: 200px;
+}
+
+form div {
+  margin: 1.5rem 0;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+}
+
+input {
+  background-color: #bbefef;
+  border: none;
+  border-radius: 3px;
+  height: 35px;
+  width: 200px;
+  padding: 0 1rem;
+  font-family: inherit;
+}
+
+input:focus {
+  outline: 3px solid #999;
+}
+
+button {
+  background-color: teal;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  margin: 0 0.8rem;
+  text-transform: uppercase;
+}
+#refresh {
+  background-color: orange;
+  color: #333;
+}
+
+.result-txt {
+  color: teal;
+}
+
+footer p {
+  padding: 0.5rem 0;
+  background-color: #e7e7e7;
+  color: #666;
+}
