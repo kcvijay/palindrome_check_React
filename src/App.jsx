@@ -44,7 +44,7 @@ class App extends Component {
       <div className="app-wrapper">
         <h2>Palindrome Checker</h2>
         <div className="inputs">
-          <form>
+          <form onSubmit={this.textComparisonHandler}>
             <div>
               <input
                 type="text"
@@ -71,6 +71,12 @@ class App extends Component {
         </div>
         <footer>
           <p>&copy;: Vijay KC, BCH React & Node 2022</p>
+          <a
+            href="https://github.com/kcvijay/palindrome_check_React"
+            target="_blank noreferor"
+          >
+            View at GitHub
+          </a>
         </footer>
       </div>
     );

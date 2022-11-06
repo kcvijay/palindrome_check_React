@@ -61,8 +61,17 @@ button {
   color: teal;
 }
 
-footer p {
+footer {
   padding: 0.5rem 0;
   background-color: #e7e7e7;
   color: #666;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
