@@ -5,6 +5,7 @@ import "./App.css";
 class App extends Component {
   state = {
     text: "",
+    reverse: "",
     result: "",
   };
 
@@ -17,6 +18,7 @@ class App extends Component {
     if (this.state.text.length === 1) {
       this.setState({
         result: "",
+        reverse: "",
       });
     }
   };
@@ -27,17 +29,19 @@ class App extends Component {
     let reversedText = this.state.text.toLowerCase().split("").reverse();
     if (JSON.stringify(originalText) === JSON.stringify(reversedText)) {
       this.setState({
-        result: "The given text is a Palindrome.",
+        result: "The text is a Palindrome.",
+        reverse: reversedText,
       });
     } else {
       this.setState({
-        result: "The given text is NOT a Palindrome.",
+        result: "The text is NOT a Palindrome.",
+        reverse: reversedText,
       });
     }
   };
 
   reloadWindow = () => {
-    window.reload();
+    window.location.reload();
   };
   render() {
     return (
@@ -65,7 +69,9 @@ class App extends Component {
             </button>
           </form>
           <div className="result-field">
-            <h3>{this.state.text}</h3>
+            <h3>
+              {this.state.text} &rarr; {this.state.reverse}
+            </h3>
             <p className="result-txt">{this.state.result}</p>
           </div>
         </div>
